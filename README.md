@@ -9,7 +9,7 @@ Java 21
 
 Each question is implemented in its own `.java` file with an accompanying test file.
 
-Example (for a file named `Question1_GetLongestString.java` is n accompanying file `Question1_GetLongestStringTest.java` ):
+Example (for a file named `Question1_GetLongestString.java` is an accompanying file `Question1_GetLongestStringTest.java` ):
 
 ## How to Run
 1. **Compile all files**
@@ -21,6 +21,10 @@ Example (for a file named `Question1_GetLongestString.java` is n accompanying fi
     e.g
    ```bash
    java Question1_GetLongestStringTest
+   java Question2_GetFirstUniqueProductTest
+   java Question3_GetDistanceBetweenClosestMinimumsTest
+   java Question4_GetMostCommonStringsTest
+   java Question5_RotateListTest
    ```
 
 ## Solution Explanations
@@ -36,7 +40,7 @@ Return the longest string that:
 
 - Iterate through the string list and for each string check:
   - All characters belong to the valid character set.
-  - No consecutive  identical characters are the same.
+  - No consecutive  identical characters.
 
 - Track and return longest string meeting the conditions .
 
@@ -60,10 +64,10 @@ Find the first product in an array that occurs exactly once.
 Given an integer array, find the smallest distance between any two occurrences of the minimum value.
 
 **Approach**
-- Loop once through array and keep track of:
+- Loop once through the array and keep track of:
   - Smallest number.
-  - The smallest distance between it and its counterparts .
----
+  - The smallest distance between it and identified counterparts .
+- return smallest distance
 
 ### 4️⃣ Question 4 – Three Most Common Words
 
@@ -71,7 +75,7 @@ Given an integer array, find the smallest distance between any two occurrences o
 Return the three most frequent words in a sentence, sorted alphabetically.
 
 **Approach**  
-Split the sentence into words, use a frequency map to store occurrences,  
+Split the sentence into words, use a frequency map to store occurrences
 Sort the frequency map in descending order, pick the first 3 entries and order them alphabetically.
 
 ---
