@@ -3,14 +3,14 @@ import java.util.HashMap;
 
 public class Question2_GetFirstUniqueProduct {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // Set needed inputs
-        String[] inputArray= new String[] { "Apple", "Computer", "Apple", "Bag" };
+        String[] inputArray = new String[]{"Apple", "Computer", "Apple", "Bag"};
 
-        String uniqueProduct=getFirstUniqueProduct(inputArray);
+        String uniqueProduct = getFirstUniqueProduct(inputArray);
 
-        System.out.printf("Unique product for array %s is %s", Arrays.toString(inputArray),uniqueProduct);
+        System.out.printf("Unique product for array %s is %s", Arrays.toString(inputArray), uniqueProduct);
     }
 
     /*
@@ -20,7 +20,7 @@ public class Question2_GetFirstUniqueProduct {
 
     static String getFirstUniqueProduct(String[] products) {
 
-        if(products==null){
+        if (products == null) {
             return null;
         }
 

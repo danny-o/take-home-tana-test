@@ -11,25 +11,25 @@ public class Test_Question2_GetFirstUniqueProduct {
 
         runTest(
                 "Test unique product has first occurrence in array",
-                new String[]{"Apple", "Computer", "Apple", "Bag","Computer","Charger"},
+                new String[]{"Apple", "Computer", "Apple", "Bag", "Computer", "Charger"},
                 "Bag"
         );
 
         runTest(
                 "Test unique product has last occurrence in array",
-                new String[]{"Apple", "Bag", "Apple", "Bag","Computer","Computer","Charger"},
+                new String[]{"Apple", "Bag", "Apple", "Bag", "Computer", "Computer", "Charger"},
                 "Charger"
         );
 
         runTest(
                 "Test no unique product in array",
-                new String[]{"Apple", "Computer", "Apple", "Bag","Computer","Bag"},
+                new String[]{"Apple", "Computer", "Apple", "Bag", "Computer", "Bag"},
                 null
         );
 
         runTest(
                 "Test all products are unique",
-                new String[]{"Apple", "Computer", "Bag","Charger"},
+                new String[]{"Apple", "Computer", "Bag", "Charger"},
                 "Apple"
         );
 
@@ -59,10 +59,9 @@ public class Test_Question2_GetFirstUniqueProduct {
 
         runTest(
                 "Test case sensitivity",
-                new String[]{"Apple", "Computer", "apple", "Bag","COMPUTER","bag","Charger"},
+                new String[]{"Apple", "Computer", "apple", "Bag", "COMPUTER", "bag", "Charger"},
                 "Charger"
         );
-
 
 
     }

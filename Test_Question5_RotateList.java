@@ -11,9 +11,9 @@ public class Test_Question5_RotateList {
 
         runTest(
                 "Test list of unique strings",
-                List.of("a","b","c"),
+                List.of("a", "b", "c"),
                 2,
-                List.of("b","c","a")
+                List.of("b", "c", "a")
         );
 
         runTest(
@@ -31,40 +31,38 @@ public class Test_Question5_RotateList {
         );
         runTest(
                 "Test shift greater than size of list",
-                List.of("a","b","c","d"),
+                List.of("a", "b", "c", "d"),
                 10,
-                List.of("c","d","a","b")
+                List.of("c", "d", "a", "b")
         );
 
         runTest(
                 "Test shift as a multiple  of size of list",
-                List.of("a","b","c","d"),
+                List.of("a", "b", "c", "d"),
                 8,
-                List.of("a","b","c","d")
+                List.of("a", "b", "c", "d")
         );
         runTest(
                 "Test list with duplicates",
-                List.of("a","a","c","d"),
+                List.of("a", "a", "c", "d"),
                 3,
-                List.of("a","c","d","a")
+                List.of("a", "c", "d", "a")
         );
 
 
         runTest(
                 "Test list with empty strings",
-                List.of("a","a","c",""),
+                List.of("a", "a", "c", ""),
                 3,
-                List.of("a","c","","a")
+                List.of("a", "c", "", "a")
         );
-
-
 
 
     }
 
-    public static void runTest(String name, List<String> list, int shift,List<String> expected) {
+    public static void runTest(String name, List<String> list, int shift, List<String> expected) {
 
-        List<String> result = Question5_RotateList.rotateList(list,shift);
+        List<String> result = Question5_RotateList.rotateList(list, shift);
         boolean pass = result.equals(expected);
         System.out.printf("[%s] %s %s%n",
                 pass ? "PASS" : "FAIL",

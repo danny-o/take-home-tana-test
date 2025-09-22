@@ -12,26 +12,26 @@ public class Test_Question4_GetMostCommonStrings {
         runTest(
                 "Test 3-word string",
                 "a b c",
-                new String[]{"a","b","c"}
+                new String[]{"a", "b", "c"}
         );
 
         runTest(
                 "Test more than 3 words each with one occurrence",
                 "a b c d e f",
-                new String[]{"a","b", "c"}
+                new String[]{"a", "b", "c"}
         );
 
 
         runTest(
                 "Test for 3 words with same frequency of occurrence",
                 "hi there care to discuss algorithm basis or how to solve algorithm or",
-                new String[]{"algorithm", "or","to"}
+                new String[]{"algorithm", "or", "to"}
         );
 
         runTest(
                 "Test all strings being most common",
                 "m n o m n o m n o p p p p",
-                new String[]{"m","n", "p"}
+                new String[]{"m", "n", "p"}
         );
 
         runTest(
@@ -45,9 +45,6 @@ public class Test_Question4_GetMostCommonStrings {
                 "",
                 new String[]{}
         );
-
-
-
 
 
     }

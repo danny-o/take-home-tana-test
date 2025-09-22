@@ -7,15 +7,15 @@ import java.util.Set;
 
 public class Question1_GetLongestString {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         // Set needed inputs
-        String longestString=getLongestString(
+        String longestString = getLongestString(
                 Arrays.asList('A', 'B', 'C', 'D'),
                 Arrays.asList("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA")
         );
 
-        System.out.printf("Longest String is %s",longestString);
+        System.out.printf("Longest String is %s", longestString);
     }
 
     /*
@@ -65,8 +65,6 @@ public class Question1_GetLongestString {
         }
         return longestString;
     }
-
-
 
 
 }
