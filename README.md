@@ -9,22 +9,34 @@ Java 21
 
 Each question is implemented in its own `.java` file with an accompanying test file.
 
-Example (for a file named `Question1_GetLongestString.java` is an accompanying file `Question1_GetLongestStringTest.java` ):
+Example (for a file named `Question1_GetLongestString.java` is an accompanying file `Test_Question1_GetLongestString.java` ):
+
 
 ## How to Run
-1. **Compile all files**
+**Compile all files**
    ```bash
-   javac *.java
+      javac *.java
    ```
-   
-2. Run the Test file for the desired Question
-    e.g
+
+### Running files to each question
+Each question has sample input parameters and can be run by calling `java {file_name}` 
+   e.g.
    ```bash
-   java Question1_GetLongestStringTest
-   java Question2_GetFirstUniqueProductTest
-   java Question3_GetDistanceBetweenClosestMinimumsTest
-   java Question4_GetMostCommonStringsTest
-   java Question5_RotateListTest
+       java Question1_GetLongestString
+       java Question2_GetFirstUniqueProduct
+       java Question3_GetDistanceBetweenClosestMinimums
+       java Question4_GetMostCommonStrings
+       java Question5_RotateList
+   ```
+### Running Test files to each question
+Test files to each question can be run by calling `java {test_file_name}`
+    e.g.
+   ```bash
+       java Test_Question1_GetLongestString
+       java Test_Question2_GetFirstUniqueProduct
+       java Test_Question3_GetDistanceBetweenClosestMinimums
+       java Test_Question4_GetMostCommonStrings
+       java Test_Question5_RotateList
    ```
 
 ## Solution Explanations
@@ -39,7 +51,7 @@ Return the longest string that:
 **Approach**  
 
 - Iterate through the string list and for each string check:
-  - All characters belong to the valid character set.
+  - That all characters belong to the valid character set.
   - No consecutive  identical characters.
 
 - Track and return longest string meeting the conditions .
