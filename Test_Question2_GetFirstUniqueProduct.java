@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Question2_GetFirstUniqueProductTest {
+public class Test_Question2_GetFirstUniqueProduct {
 
 
     public static void main(String[] args) {

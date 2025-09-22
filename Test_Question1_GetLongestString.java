@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Objects;
 
 
-public class Question1_GetLongestStringTest {
+public class Test_Question1_GetLongestString {
 
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Question5_RotateListTest {
+public class Test_Question5_RotateList {
 
 
     public static void main(String[] args) {

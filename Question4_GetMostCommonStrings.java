@@ -2,12 +2,20 @@ import java.util.*;
 
 public class Question4_GetMostCommonStrings {
 
+    public static void main(String[] args){
+
+        // Set needed inputs
+        String inputString= "hi there care to discuss algorithm basis or how to solve algorithm or";
+
+        String[] commonStrings=getMostCommonStrings(inputString);
+
+        System.out.printf(" 3 Most common strings in alphabetical order are %s", Arrays.toString(commonStrings));
+    }
 
     /*
     * Requirement:
     * Return an array of three most common strings from an input string in alphabetical order
     * */
-
 
     static String[] getMostCommonStrings(String text){
 

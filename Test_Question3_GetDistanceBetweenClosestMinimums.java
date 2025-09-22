@@ -1,4 +1,4 @@
-public class Question3_GetDistanceBetweenClosestMinimumsTest {
+public class Test_Question3_GetDistanceBetweenClosestMinimums {
 
     public static void main(String[] args) {
         runTests();

@@ -1,5 +1,16 @@
+import java.util.Arrays;
+
 public class Question3_GetDistanceBetweenClosestMinimums {
 
+    public static void main(String[] args){
+
+        // Set needed inputs
+        int[] numberArray= new int[] {1,2,3,1,4,5,2};
+
+        int smallestDistance=getDistanceBetweenClosestMinimums(numberArray);
+
+        System.out.printf("Smallest distance between minimums for array %s is  %d", Arrays.toString(numberArray), smallestDistance);
+    }
 
 
     /*

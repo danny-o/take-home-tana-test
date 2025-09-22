@@ -1,8 +1,21 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Question5_RotateList {
 
+
+    public static void main(String[] args){
+
+        // Set needed inputs
+        List<String> inputList= List.of("ID_A01","ID_A02","ID_A03","ID_A04","ID_A05","ID_A06");
+
+        int shift = 2;
+
+        List<String> rotateList=rotateList(inputList,shift);
+
+        System.out.printf("Output list after shifting list by %d is %s:",shift,rotateList );
+    }
 
     /*
     * Requirement:
@@ -22,8 +35,8 @@ public class Question5_RotateList {
         int listSize=list.size();
         int computedShift =shift%listSize;
 
-        // add elements whose index will reduce to the beginning of the list
-
+        // add elements expected to move to the beginning of the list
+;
         rotatedList.addAll(list.subList(listSize-computedShift,listSize));
 
         // add remaining elements to the rest end of list

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Question4_GetMostCommonStringsTest {
+public class Test_Question4_GetMostCommonStrings {
 
 
     public static void main(String[] args) {

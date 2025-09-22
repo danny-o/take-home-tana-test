@@ -1,22 +1,28 @@
 
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class Question1_GetLongestString {
 
+    public static void main(String[] args){
+
+        // Set needed inputs
+        String longestString=getLongestString(
+                Arrays.asList('A', 'B', 'C', 'D'),
+                Arrays.asList("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA")
+        );
+
+        System.out.printf("Longest String is %s",longestString);
+    }
+
     /*
      * we are required to find the longest string which matches below conditions:
      * 1. No repetitive identical characters
      * 2. Only contains characters among given list of characters
      */
-
-    public static void main(String[] args){
-        Question1_GetLongestStringTest.runTests();
-    }
-
 
     public static String getLongestString(List<Character> characterConstraints, List<String> strings) {
 

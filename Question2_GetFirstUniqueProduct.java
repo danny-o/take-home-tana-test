@@ -1,6 +1,17 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Question2_GetFirstUniqueProduct {
+
+    public static void main(String[] args){
+
+        // Set needed inputs
+        String[] inputArray= new String[] { "Apple", "Computer", "Apple", "Bag" };
+
+        String uniqueProduct=getFirstUniqueProduct(inputArray);
+
+        System.out.printf("Unique product for array %s is %s", Arrays.toString(inputArray),uniqueProduct);
+    }
 
     /*
      * Requirement:
