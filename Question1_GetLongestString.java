@@ -10,12 +10,14 @@ public class Question1_GetLongestString {
     public static void main(String[] args) {
 
         // Set needed inputs
+        List<Character> characterConstraints = Arrays.asList('A', 'B', 'C', 'D');
+        List<String> stringList = Arrays.asList("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA");
         String longestString = getLongestString(
-                Arrays.asList('A', 'B', 'C', 'D'),
-                Arrays.asList("AABCDA", "ABCDZADC", "ABCDBCA", "ABCDABDCA")
+                characterConstraints,
+                stringList
         );
 
-        System.out.printf("Longest String is %s", longestString);
+        System.out.printf("Longest String for input list %s is %s", stringList, longestString);
     }
 
     /*
