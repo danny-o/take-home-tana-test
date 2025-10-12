@@ -29,7 +29,7 @@ Tests to each question can be run by calling `java {file_name}`
        java Question5_RotateList_To_The_Right
    ```
 ### Running all tets
-All tests associated with questions can be run at the same time by calling:
+All tests associated with the questions can be run at the same time by calling:
     e.g.
    ```bash
        java Test_Combined_Tests
