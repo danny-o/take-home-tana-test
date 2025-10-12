@@ -15,7 +15,7 @@ public class Question1_GetLongestString {
         // Store characters list in a set to optimise lookup
         // as sets have a lookup time of O(1)
 
-        Set<Character> characterSet = new HashSet<>(validCharacters);
+        Set<Character> validCharacterSet = new HashSet<>(validCharacters);
 
 
         // sort strings from longest to shortest
@@ -29,7 +29,7 @@ public class Question1_GetLongestString {
 
             for(int i=0; i<string.length(); i++){
                 char currentChar = string.charAt(i);
-                if(!characterSet.contains(currentChar)){
+                if(!validCharacterSet.contains(currentChar)){
                     break;
                 }
                 if(i>0 && currentChar==prevCharacter){

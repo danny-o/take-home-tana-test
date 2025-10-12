@@ -23,10 +23,10 @@ Tests to each question can be run by calling `java {file_name}`
    e.g.
    ```bash
        java Question1_GetLongestString
-       java Question2_GetFirstUniqueProduct
-       java Question3_GetDistanceBetweenClosestMinimums
-       java Question4_GetMostCommonStrings
-       java Question5_RotateList
+       java Question2_Find_First_Unique_Product
+       java Question3_Smallest_Distance_Between_Minimums
+       java Question4_Three_Most_Common_Strings
+       java Question5_RotateList_To_The_Right
    ```
 ### Running all tets
 All tests associated with questions can be run at the same time by calling:
@@ -41,16 +41,16 @@ All tests associated with questions can be run at the same time by calling:
 
 **Problem**  
 Return the longest string that:
-- Has no adjacent identical characters.
-- Uses only the allowed list of characters.
+- Has no repetitive identical characters.
+- Contains only the allowed list of characters.
 
 **Approach**  
-
+- Sort the string array in descending order of string length
 - Iterate through the string list and for each string check:
   - That all characters belong to the valid character set.
   - No consecutive  identical characters.
 
-- Track and return longest string meeting the conditions .
+- return the first string that meets the conditions .
 
 ---
 
@@ -62,7 +62,7 @@ Find the first product in an array that occurs exactly once.
 **Approach**  
 - Iterate through the string array and store the frequency of each string in a map.
 
-- Look up the first string with a frequency of 1 from the map.
+- From the map, Look up the first string with a frequency of 1.
 
 ---
 
@@ -98,6 +98,6 @@ Example:
 
 **Approach**  
 - Create new list then:
-- Add all elements whose indices are expected to decrease then those whose indices are expected to increase and return the new list
+- Add all elements expected to move to the beginning of the list then elements expected to move to the end of the list
 
 

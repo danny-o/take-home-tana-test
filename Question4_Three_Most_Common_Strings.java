@@ -19,11 +19,13 @@ public class Question4_Three_Most_Common_Strings {
             return new String[]{};
         }
 
-        // Store string occurrence in a map
+
 
         HashMap<String,Integer> frequency = new HashMap<>();
 
         String[] stringArray= text.split(" ");
+
+        // Store string occurrence in a map
 
         for(String string: stringArray){
 

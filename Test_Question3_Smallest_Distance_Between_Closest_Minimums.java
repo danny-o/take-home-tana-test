@@ -47,7 +47,7 @@ public class Test_Question3_Smallest_Distance_Between_Closest_Minimums {
 
     public static void runTest(String name, int[] numbers, int expected) {
 
-        int result = Question3_Smallest_Distance_Between_Closest_Minimums.getDistanceBetweenClosestMinimums(numbers);
+        int result = Question3_Smallest_Distance_Between_Minimums.getDistanceBetweenClosestMinimums(numbers);
         boolean pass = result == expected;
         System.out.printf("[%s] %s %s%n",
                 pass ? "PASS" : "FAIL",

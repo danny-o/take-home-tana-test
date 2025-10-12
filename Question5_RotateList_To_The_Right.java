@@ -17,7 +17,6 @@ public class Question5_RotateList_To_The_Right {
               return list;
           }
 
-          // Add elements expected to move to the beginning of the list
 
           List<T> newList = new ArrayList<>();
 
@@ -30,16 +29,16 @@ public class Question5_RotateList_To_The_Right {
           }
 
 
-          //Add elements expected to move to beginning of new list
+          // Add elements expected to move to beginning of new list
+          // These are those whose index is in the range (list size-shift) to listSize
 
           newList.addAll(list.subList(list.size()-actualShift,list.size()));
 
 
           // Then elements expected to be last in the list
+          // These are those whose index is in the range 0 to (list size-shift)
 
           newList.addAll(list.subList(0,list.size()-actualShift));
-
-
 
 
           return newList;

@@ -10,15 +10,14 @@ public class Question2_Find_First_Unique_Product {
 
 
     static String findFirstUniqueProduct(String[] products){
-
+        // Edge case for when the array is null
         if(products==null){
             return null;
         }
 
-        // Store frequency of occurrence  in hashmap
-        // get first string with a single occurrence
-
         HashMap<String, Integer> frequencyMap = new HashMap<>();
+
+        // Store frequency of occurrence  in hashmap
 
         for(String string : products){
 
@@ -27,6 +26,7 @@ public class Question2_Find_First_Unique_Product {
             frequencyMap.put(lowerCaseString,frequencyMap.getOrDefault(lowerCaseString,0)+1);
         }
 
+        // get first string with a single occurrence
         for(String product: products){
 
             if(frequencyMap.get(product.toLowerCase())==1){
