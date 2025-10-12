@@ -28,7 +28,7 @@ Tests to each question can be run by calling `java {file_name}`
        java Question4_Three_Most_Common_Strings
        java Question5_RotateList_To_The_Right
    ```
-### Running all tets
+### Running all tests
 All tests associated with the questions can be run at the same time by calling:
 
    ```bash
